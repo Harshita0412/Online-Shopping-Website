@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+    <div class="top-bar">
+        <div class="contact-details">
+            <p><strong>Contact:</strong> +91-123-456-7890 | support@ourstore.com</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram Logo" class="social-icon">
+                Follow us on Instagram
+            </a>
+        </div>
+    </div>
+
+   <h1 class = "Urban Vogue"> Urban Vogue <img src="logo.png" alt = "Company-Logo" class ="Company-Logo"> </h1>
+   <p>Welcome to Urban Vogue, your ultimate destination for modern, stylish, and comfortable clothing for both men and women. At Urban Vogue, we believe that fashion is a reflection of your unique personality, and we're here to offer a diverse range of collections that cater to all your style needs.
+
+    Whether you're looking for everyday casuals, office wear, or something bold for a night out, we’ve got you covered. Our collections feature a wide variety of premium quality fabrics and trendy designs, making it easy to find the perfect outfit for every occasion.
+    
+    We’ve carefully curated sections to make your shopping experience effortless. Explore our categories for men and women, where you’ll find everything from classic essentials to the latest fashion-forward pieces. Our easy-to-navigate collections ensure you can find exactly what you need, whether it's shirts, dresses, jackets, pants, accessories, or more.
+    
+    At Urban Vogue, we’re all about making style accessible. We’re committed to offering high-quality fashion at affordable prices, so you can stay on top of the latest trends without compromising on quality.
+    
+    Experience the perfect blend of urban sophistication and laid-back comfort with Urban Vogue—where style meets convenience. Start browsing today and discover your new favorite looks!
+    </p>
+    
+    <div class="description">
+        <h1>Welcome to Our Store</h1>
+        <p>Explore the best collections for kids, women, and men!</p>
+    </div>
+    
+    <div class="top-section">
+        <div class="women-section">
+            <h2><a href="women.html">Women's Section</a></h2>
+            <a href="women.html">
+            <img src="zara.jpg" alt="Women's Image" class="image-women" id="zara-image">
+        </a>
+        </div>
+        <div class="men-section">
+            <h2><a href="men.html">Men's Section</a></h2>
+            <a href="women.html">
+            <img src="men.jpg" alt="Men's Image" class="image-men" id="men-image">
+          </a>
+        </div>
+    </div>
+    <!-- Other sections of your website -->
+    
+<footer class="site-footer">
+    <div class="footer-section">
+        <h3>Customer Support</h3>
+        <p>For any queries, please contact our support team.</p>
+    </div>
+    <div class="footer-section">
+        <h3>Helpline</h3>
+        <p>+91-123-456-7890</p>
+    </div>
+    <div class="footer-section">
+        <h3>Email Address</h3>
+        <p>support@ourstore.com</p>
+    </div>
+    <div class="footer-section">
+        <h3>Location</h3>
+        <p>123 Fashion Street,<br> New Delhi, India</p>
+    </div>
+    <div class="footer-section">
+        <h3>Owner</h3>
+        <p>Harshita's Store</p>
+    </div>
+</footer>
+<script>
+    // Function to add animation class
+    function addAnimation(element, animationClass) {
+        element.classList.add(animationClass);
+        setTimeout(() => {
+            element.classList.remove(animationClass); // Remove animation after it's done
+        }, 1000); // Adjust duration to match the animation
+    }
+
+    // Add click event listeners
+    const zaraImage = document.getElementById('zara-image');
+    const menImage = document.getElementById('men-image');
+
+    zaraImage.addEventListener('click', () => {
+        addAnimation(zaraImage, 'bounce-animation');
+    });
+
+    menImage.addEventListener('click', () => {
+        addAnimation(menImage, 'spin-animation');
+    });
+</script>
+
+
+</body>
+</html>

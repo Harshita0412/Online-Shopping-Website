@@ -1,0 +1,289 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light, neutral background */
+    color: #343a40; /* Dark gray for readable text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styling */
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #495057; /* Soft gray for headings */
+    margin: 20px 0;
+  }
+  
+  p {
+    text-align: justify;
+    color: #6c757d; /* Subtle gray for paragraph text */
+    margin: 10px 20px;
+  }
+  
+  /* Navigation Links (if you plan to add them) */
+  nav a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+  
+  /* Main Sections */
+  .description h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #212529;
+  }
+  
+  .description p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px auto;
+    max-width: 80%;
+    color: #495057;
+  }
+  
+  /* Top Section */
+  .top-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .top-section div {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .top-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top-section a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black; /* Stylish blue for links */
+    margin: 5px;
+  }
+  
+  .top-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Styling */
+  .site-footer {
+    background-color: #343a40; /* Dark footer for contrast */
+    color: #f8f9fa; /* Light text for footer */
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .site-footer h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #f8f9fa;
+  }
+  
+  .site-footer p {
+    font-size: 0.9rem;
+    color: #adb5bd; /* Subtle gray for footer text */
+  }
+  
+  /* Women's Section Page */
+  .category {
+    display: inline-block;
+    width: 200px;
+    padding: 15px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .category span {
+    font-size: 1.1rem;
+    color: #212529;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .top-section {
+      flex-direction: column;
+    }
+  
+    .category {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .image-men {
+    max-width: 100%; /* Ensures the image is responsive */
+    width: 395px;    /* Adjust the width as needed */
+    height: auto;    /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto;  /* Centers the image */
+}
+
+.women-section:hover {
+    transform: scale(1.1); /* Zoom effect */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a popup effect */
+}
+
+.women-section:active {
+    transform: scale(1); /* Slight bounce-back on click */
+}
+
+.men-section:hover {
+    transform: scale(1.1); /* Zoom effect */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a popup effect */
+}
+
+.men-section:active {
+    transform: scale(1); /* Slight bounce-back on click */
+}
+
+/* Top Bar Styling */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid #ddd;
+}
+
+.top-bar .contact-details {
+    font-size: 14px;
+    color: #333;
+}
+
+.top-bar .social-media {
+    font-size: 14px;
+}
+
+.top-bar .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Company Title and Logo Styling */
+.company-title {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    color: #333;
+    margin-top: 20px;
+}
+
+.Company-Logo {
+    width: 50px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    left: calc(50% + 100px); /* Adjust this value to control logo position */
+    top: 10px;
+}
+
+/* Hover Effect on Title */
+.company-title:hover .Company-Logo {
+    transform: scale(1.3);
+    opacity: 1;
+}
+
+/* Footer Styling */
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.store-title {
+    font-size: 2rem; /* Adjust the size as needed */
+    text-align: center;
+    color: #333; /* Default text color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.store-title:hover {
+    transform: scale(1.1); /* Slightly enlarge the text */
+    color: #0077cc; /* Change color on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+
+.store-title::after {
+    content: '✨'; 
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.store-title:hover::after {
+    opacity: 1; 
+}
